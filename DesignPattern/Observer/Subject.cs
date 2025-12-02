@@ -1,8 +1,7 @@
-﻿
-namespace DesignPattern.Observer
+﻿namespace DesignPattern.Observer
 {
     // The ConcreteSubject class
-    // The Subject have states and notifies all observers when the state changes.
+    // The Subject has a state and notifies all observers when the state changes.
     public class Subject(string productName, int productPrice, string availability) : ISubject
     {
         private readonly List<IObserver> observers = [];
@@ -25,13 +24,13 @@ namespace DesignPattern.Observer
 
         public void RegisterObserver(IObserver observer)
         {
-            Console.WriteLine("Observer Added : " + ((ConcreteObserver)observer).UserName);
+            Console.WriteLine($"Observer Added : {observer.GetType().Name}");
             observers.Add(observer);
         }
 
         public void RemoveObserver(IObserver observer)
         {
-            Console.WriteLine("Observer Removed : " + ((ConcreteObserver)observer).UserName);
+            Console.WriteLine($"Observer Removed : {observer.GetType().Name}");
             observers.Remove(observer);
         }
 
