@@ -1,0 +1,59 @@
+# C#/.NET common ignores
+
+## User-specific files
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+## Build results
+[Dd]ebug/
+[Dd]ebugPublic/
+[Rr]elease/
+[Rr]eleases/
+x64/
+x86/
+[Aa]rm/
+[Aa]rm64/
+bld/
+[Bb]in/
+[Oo]bj/
+
+## IDE specific files
+.vs/
+.vscode/
+.idea/
+*.csproj.user
+*.dbmdl
+*.jfm
+
+## Rider specific
+.idea/
+*.sln.iml
+
+## Resharper specific
+_ReSharper*/
+*.[Rr]esharper
+*.DotSettings.user
+
+## Test results
+TestResult.xml
+*.VisualState.xml
+*.DotSettings
+
+## Misc
+*.mpf
+*.publishsettings
+*.~(?!gitignore)*
+*.orig
+node_modules/
+
+# Mac files
+.DS_Store
+
+# Windows thumbnail cache
+Thumbs.db
+
+# Helpers
+collect_code.sh
+collected_code.txt
